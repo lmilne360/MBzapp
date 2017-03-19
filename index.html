@@ -1,0 +1,11 @@
+<div ng-app="MBzapp">
+    <div ng-controller="ChatController as ctrl">
+        <div ng-repeat="message in ctrl.messages">
+            <strong>:</strong>
+            <span></span>
+        </div>
+        <form ng-submit="ctrl.send()">
+            <input ng-model="ctrl.textbox">
+        </form>
+    </div>
+</div>
