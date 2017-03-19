@@ -1,11 +1,22 @@
-<div ng-app="MBzapp">
-    <div ng-controller="ChatController as ctrl">
-        <div ng-repeat="message in ctrl.messages">
-            <strong>:</strong>
-            <span></span>
-        </div>
-        <form ng-submit="ctrl.send()">
-            <input ng-model="ctrl.textbox">
-        </form>
-    </div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MBzapp</title>
+</head>
+<body>
+  <div ng-app="MBzapp">
+      <div ng-controller="ChatController as ctrl">
+          <div ng-repeat="message in ctrl.messages">
+              <strong>:</strong>
+              <span></span>
+          </div>
+          <form ng-submit="ctrl.send()">
+              <input ng-model="ctrl.textbox">
+          </form>
+      </div>
+  </div>
+</body>
+</html>
