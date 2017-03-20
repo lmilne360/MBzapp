@@ -16,3 +16,7 @@ function ChatController(Messages, $scope) {
     });
   };
 }
+
+angular
+  .module('mbzapp')
+  .controller('ChatController', ChatController);
