@@ -1,4 +1,4 @@
-angular.module('mbzapp', []);
+angular.module('mbzapp', ['chat']);
 
 angular
     .module('mbzapp')

@@ -5,7 +5,7 @@ function ChatController(Messages, $scope) {
   ctrl.messages = [];
 
   // Collect Messages
-  Messages.recieve(function(message){
+  Messages.receive(function(message){
     ctrl.messages.push(message);
   });
 

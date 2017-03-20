@@ -8,17 +8,18 @@
   <script src="bower_components/rltm/web/rltm.js"></script>
   <script src="bower_components/angular-chat/angular-chat.js"></script>
   <script src="app.js"></script>
+  <script src="controller.js"></script>
   <title>MBzapp</title>
 </head>
 <body>
   <div ng-app="mbzapp">
       <div ng-controller="ChatController as ctrl">
           <div ng-repeat="message in ctrl.messages">
-              <strong>:</strong>
-              <span></span>
+              <strong>{{message.user.name}}</strong>
+              <span>{{message.data}}</span>
           </div>
           <form ng-submit="ctrl.send()">
-              <input ng-model="ctrl.textbox">
+              <input ng-model="textbox">
           </form>
       </div>
   </div>
